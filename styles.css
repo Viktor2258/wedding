@@ -1,0 +1,358 @@
+/* Базові стилі для всіх пристроїв */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lora', serif;
+  color: #252222;
+  line-height: 1.5; /* Більший line-height для кращої читабельності */
+  background-color: #ffffff;
+  transition: background-color 0.5s ease;
+  overflow-x: hidden; /* Запобігає горизонтальному скролінгу */
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hero__title {
+  position: relative;
+  z-index: 1;
+  font-family: "Great Vibes", cursive;
+  padding: 4rem 0;
+  font-size: 6rem;
+  line-height: 1.1;
+  letter-spacing: 0.3rem;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+  text-shadow: 0.1rem 0.1rem 3rem rgba(255, 255, 255, 0.58);
+}
+
+.main__wrapper {
+  max-width: 1200px; /* Фіксована ширина для великих екранів */
+  margin: 0 auto;
+  padding: 0rem; /* Додаємо відступи з боків */
+}
+
+.hero__title img {
+  width: 4rem;
+}
+
+.header {
+  background-color: #ffffff;
+}
+
+.block2 {
+  background-color: hsl(48, 64%, 92%);
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+  padding: 4rem 3rem;
+}
+
+.zaproshenya_title {
+  font-family: "Marck Script";
+  text-align: center;
+  line-height: 1.2;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.bible_text {
+  max-width: 100%;
+  margin-top: 1rem;
+  text-align: center;
+  color: #111111;
+  font-family: "Marck Script", cursive;
+  font-size: 3.5rem;
+  text-shadow: 0.1rem 0.1рем 3rem rgba(255, 255, 255, 0.58);
+}
+
+.decor {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.decor__left,
+.decor__right {
+  width: 30%;
+  height: 0.1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.date {
+  font-size: 3rem;
+  text-align: center;
+  color: #1d442295;
+}
+
+.date-wrapper {
+  margin-top: -2rem;
+  display: flex;
+  align-items: flex-end; /* Вирівнювання по нижньому краю */
+  justify-content: center; /* Центрування вмісту блоку */
+  gap: 1rem; /* Відстань між датою і зображенням */
+}
+
+.branch {
+  width: 6rem; /* Можна змінити розмір зображення на свій розсуд */
+  height: auto;
+}
+
+.details {
+  background-color: hsl(46, 78%, 89%);
+  margin-top: 0;
+  padding: 2rem 1.5rem;
+}
+
+.vstup_title {
+  font-family: 'Lora';
+  text-align: center;
+  font-size: 2rem;
+}
+
+.vstup_subtitle {
+  font-family: 'Jura';
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column; /* Вертикальне вирівнювання елементів */
+  align-items: center;
+}
+
+.calendar img {
+  margin-top: 1rem;
+  width: 25rem; /* Можна змінити розмір зображення на свій розсуд */
+  height: auto;
+}
+
+.date__timer {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: "Lora";
+  font-size: 4rem;
+  letter-spacing: 0.7rem;
+}
+
+.event-list {
+  list-style: none;
+  padding: 0 2.5rem;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.event-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Вирівнює іконку, назву і час на різних кінцях */
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #333;
+  padding-right: 2rem;
+}
+
+.icon img {
+  width: 2rem;
+  display: inline-block;
+  margin-right: 1rem;
+  fill: #000; /* Чорно-біла іконка */
+}
+
+.event-name {
+  flex: 1; /* Займає все доступне місце між іконкою та часом */
+  padding-left: 1rem;
+}
+
+.event-time {
+  font-weight: bold;
+  margin-left: auto;
+  padding-left: 1rem;
+  white-space: nowrap; /* Запобігає переносу часу на новий рядок */
+}
+
+.block3 {
+  background-color: #f7f2e8; /* М'який світло-бежевий колір */
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь для глибини */
+  text-align: center;
+}
+
+.adres_title {
+  font-size: 2.5rem;
+  color: #333; /* Темно-сірий колір для заголовка */
+  margin-bottom: 1rem;
+}
+
+.adres_subtitle {
+  font-size: 1.8rem;
+  color: #555; /* Середньо-сірий для підзаголовка */
+  margin-bottom: 1.5rem;
+}
+
+.map-button {
+  background-color: #98a268d6; /* Темно-зелений колір для кнопки */
+  color: #fff; /* Білий текст */
+  border: none;
+  padding: 0.8rem 5rem;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.map-button:hover {
+  background-color: #7b856d; /* Трохи темніший відтінок зеленого на ховер */
+}
+
+.rsvp {
+  background-color: #f0f4f8; /* Світло-сірий фон */
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь для глибини */
+  text-align: left;
+  max-width: 400px;
+  margin: 2rem auto; /* Центрування блока */
+}
+
+.rsvp p {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.rsvp-date {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #555; /* Червоний колір для акценту на даті */
+}
+
+.rsvp-contacts strong {
+  font-size: 1.6rem;
+  display: block;
+  margin-top: -1rem;
+  color: #555; /* Темно-сірий колір для контактів */
+}
+
+.rsvp-contacts strong:first-child {
+  margin-top: 1rem; /* Відступ зверху для першого контакту */
+}
+
+.hearts {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.hearts img {
+  width: 40px; /* Розмір сердечок */
+  margin: 0 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.hearts img:hover {
+  transform: scale(1.2); /* Збільшення сердечок при наведенні */
+}
+
+/* --- Адаптація для екранів шириною менше 1200px --- */
+@media (max-width: 1200px) {
+  .main__wrapper {
+    width: 100%;
+    padding: 0rem; /* Зменшення бокових відступів */
+  }
+  
+  .hero__title {
+    font-size: 5rem; /* Зменшуємо розмір тексту */
+  }
+
+  .block2 {
+    padding: 3rem 2rem;
+  }
+
+  .zaproshenya_title {
+    font-size: 2.5rem;
+  }
+
+  .bible_text {
+    font-size: 3.2rem;
+  }
+}
+
+/* --- Адаптація для планшетів та мобільних пристроїв --- */
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 4rem;
+    padding: 3rem 0;
+  }
+
+  .bible_text {
+    font-size: 2.5rem;
+  }
+
+  .zaproshenya_title {
+    font-size: 3rem;
+  }
+
+  .block2 {
+    padding: 2rem 1.5rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
+
+  .decor__left,
+  .decor__right {
+    width: 50%;
+  }
+}
+
+/* --- Адаптація для дуже малих екранів (мобільні телефони) --- */
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: 3.5rem;
+    padding: 2rem 0;
+  }
+
+  .bible_text {
+    font-size: 2rem;
+  }
+
+  .zaproshenya_title {
+    font-size: 2.5rem;
+  }
+
+  .block2 {
+    padding: 1.5rem 1.5rem;
+  }
+
+  .calendar img {
+    width: 80%; /* Робимо зображення календаря адаптивним */
+  }
+
+  .date__timer {
+    font-size: 2.5rem; /* Зменшення таймера */
+  }
+
+  .event-list li {
+    font-size: 1.8rem; /* Зменшення розміру тексту для списку подій */
+  }
+}
